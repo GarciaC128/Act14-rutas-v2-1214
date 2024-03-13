@@ -9,7 +9,7 @@ class PantallaInicial_1214 extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text("Card container Garcia1214"),
-        backgroundColor: Colors.brown,
+        backgroundColor: Color(0xff132e68),
       ),
       body: Center(
         child: Column(
@@ -20,12 +20,27 @@ class PantallaInicial_1214 extends StatelessWidget {
                 Navigator.pushNamed(context, "/Pantalla1_1214");
               },
               child: Text("Mover a pantalla1"),
+              style: ElevatedButton.styleFrom(
+                  primary: Color(0xff2b79c3),
+                  textStyle: TextStyle(fontSize: 26)),
             ),
             ElevatedButton(
               onPressed: () {
                 Navigator.pushNamed(context, "/Pantalla2_1214");
               },
               child: Text("Mover a pantalla2"),
+              style: ElevatedButton.styleFrom(
+                  primary: Color(0xff215c95),
+                  textStyle: TextStyle(fontSize: 26)),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, "/Pantalla3_1214");
+              },
+              child: Text("Mover a pantalla3"),
+              style: ElevatedButton.styleFrom(
+                  primary: Color(0xff1a4874),
+                  textStyle: TextStyle(fontSize: 26)),
             ),
           ], // niños
         ),
